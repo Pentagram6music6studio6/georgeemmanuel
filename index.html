@@ -1,210 +1,70 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Pentagram Music Studio | George Emmanuel</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-
-background:#090909;
-color:white;
-font-family:Inter,sans-serif;
-
-}
-
-.hero{
-
-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:40px;
-
-background:
-linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
-url("https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1800&q=80");
-
-background-size:cover;
-background-position:center;
-
-}
-
-.hero-content{
-
-max-width:900px;
-
-}
-
-.hero h1{
-
-font-family:Cinzel,serif;
-font-size:72px;
-letter-spacing:5px;
-margin-bottom:10px;
-
-}
-
-.hero h2{
-
-font-family:Cinzel,serif;
-font-weight:400;
-font-size:32px;
-letter-spacing:2px;
-margin-bottom:25px;
-
-}
-
-.hero h3{
-
-font-weight:300;
-font-size:20px;
-letter-spacing:4px;
-text-transform:uppercase;
-color:#d8d8d8;
-margin-bottom:35px;
-
-}
-
-.hero p{
-
-font-size:22px;
-line-height:1.8;
-color:#e5e5e5;
-margin-bottom:45px;
-
-}
-
-.button{
-
-display:inline-block;
-padding:18px 42px;
-background:white;
-color:black;
-text-decoration:none;
-font-weight:700;
-border-radius:40px;
-transition:.3s;
-
-}
-
-.button:hover{
-
-transform:scale(1.05);
-
-}
-
-section{
-
-max-width:1200px;
-margin:auto;
-padding:90px 30px;
-
-}
-
-.section-title{
-
-font-family:Cinzel,serif;
-font-size:42px;
-margin-bottom:35px;
-
-}
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-
-}
-
-.card{
-
-background:#141414;
-padding:30px;
-border-radius:15px;
-
-}
-
-.card h3{
-
-margin-bottom:15px;
-
-}
-
-.card p{
-
-color:#cccccc;
-line-height:1.6;
-
-}
-
-footer{
-
-padding:40px;
-text-align:center;
-border-top:1px solid #222;
-color:#888;
-
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<section class="hero">
+<header class="navbar">
+
+<div class="nav-container">
+
+<a href="#home" class="nav-logo">
+PENTAGRAM MUSIC STUDIO
+</a>
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a href="#home">HOME</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#services">SERVICES</a></li>
+<li><a href="#artists">ARTISTS & PROJECTS</a></li>
+<li><a href="#listen">LISTEN</a></li>
+<li><a href="#discography">DISCOGRAPHY</a></li>
+<li><a href="#contact">CONTACT</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<section id="home" class="hero">
+
+<video autoplay muted loop playsinline class="hero-video">
+
+<source src="assets/video/hero-video.mp4" type="video/mp4">
+
+</video>
+
+<div class="hero-overlay"></div>
 
 <div class="hero-content">
 
-<h1>
-PENTAGRAM MUSIC STUDIO
-</h1>
+<h1>PENTAGRAM MUSIC STUDIO</h1>
 
-<h2>
-by George Emmanuel
-</h2>
-
-<h3>
-Producer • Mix Engineer • Mastering Engineer
-</h3>
+<h2>by George Emmanuel</h2>
 
 <p>
-
-Crafting world-class productions for artists who demand excellence.
-
-<br><br>
-
-Specialized in Extreme Metal, Rock & Heavy Music.
-
+Producer • Engineer • Songwriter
 </p>
 
-<a class="button" href="#">
+<a href="mailto:pentagrammusicstudio@gmail.com" class="cta-button">
 BOOK YOUR PROJECT
 </a>
 
@@ -212,52 +72,30 @@ BOOK YOUR PROJECT
 
 </section>
 
-<section>
+<section id="about" class="section">
 
-<div class="section-title">
+<div class="container about-grid">
 
-Services
+<div class="about-image">
+
+<img src="assets/photos/01 George photo.jpg" alt="George Emmanuel">
 
 </div>
 
-<div class="cards">
+<div class="about-text">
 
-<div class="card">
-
-<h3>Mixing</h3>
+<h2>ABOUT</h2>
 
 <p>
-Professional mixes with clarity, impact and atmosphere.
+Led by producer, engineer, songwriter, and musician George Emmanuel, Pentagram Music Studio specializes in songwriting and production assistance, recording, mixing, and mastering for Extreme Metal, Rock, and Heavy Music.
 </p>
 
-</div>
-
-<div class="card">
-
-<h3>Mastering</h3>
-
 <p>
-Powerful masters optimized for every streaming and physical format.
+Drawing from over 15 years of experience in music production and performance, the studio has contributed to projects involving artists such as Rotting Christ, Septicflesh, Thy Catafalque, Orphaned Land, Corvus Corax, Lacrimas Profundere, Lucifer's Child, and many more, as well as releases associated with labels and companies including Nuclear Blast, Metal Blade, Season of Mist, and Netflix productions.
 </p>
 
-</div>
-
-<div class="card">
-
-<h3>Production</h3>
-
 <p>
-From pre-production and arrangement to the final master.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Session Guitars</h3>
-
-<p>
-Professional rhythm, lead and acoustic guitar recordings.
+Whether you are seeking creative guidance, professional recording, mixing, or mastering, our mission is simple: to help bring your artistic vision to life and realize the full potential of your music.
 </p>
 
 </div>
@@ -266,13 +104,219 @@ Professional rhythm, lead and acoustic guitar recordings.
 
 </section>
 
+<section id="services" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+SERVICES
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<h3>Songwriting & Production Assistance</h3>
+
+<p>
+Sometimes the difference between a good song and a great song lies in the details. By working closely with artists throughout the creative process, George Emmanuel helps refine arrangements, strengthen compositions, develop melodies, improve transitions, and maximize the impact of every song while remaining faithful to the band's vision and identity.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Recording</h3>
+
+<p>
+Every great production begins with a great performance. Work directly with George Emmanuel and benefit from years of experience as a producer, engineer, and professional touring musician.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Mixing</h3>
+
+<p>
+A great mix is where vision, emotion, and technical precision come together. Every mix is approached with the goal of enhancing the identity and impact of your music while maintaining the character that makes it unique.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Mastering</h3>
+
+<p>
+From warm, dynamic analog reel-to-reel tape mastering to modern digital masters with precision, clarity, and impact, every project receives an approach that complements its identity.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="artists" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+SELECTED ARTISTS & PROJECTS
+</h2>
+
+<div class="artists-grid">
+
+<span>Rotting Christ</span>
+<span>Septicflesh</span>
+<span>Orphaned Land</span>
+<span>Thy Catafalque</span>
+<span>Corvus Corax</span>
+<span>Lacrimas Profundere</span>
+<span>Lake of Tears</span>
+<span>Ben Frost</span>
+<span>Jarboe</span>
+<span>Faith and the Muse</span>
+<span>Lucifer's Child</span>
+<span>Necromantia</span>
+<span>Thou Art Lord</span>
+<span>The Magus</span>
+<span>Yoth Iria</span>
+<span>George Kollias</span>
+<span>Demonical</span>
+<span>Chaostar</span>
+<span>Katavasia</span>
+<span>Bio-Cancer</span>
+<span>Chronosphere</span>
+<span>Corpus Diavolis</span>
+<span>Triumpher</span>
+<span>Xalpen</span>
+<span>Wothrosch</span>
+<span>Nazghor</span>
+<span>Hexbane</span>
+<span>Wisdom</span>
+<span>After Dusk</span>
+<span>Blasteroid</span>
+<span>Decipher</span>
+
+</div>
+
+<h3 class="labels-title">
+SELECTED LABELS & COMPANIES
+</h3>
+
+<div class="labels-grid">
+
+<span>The Circle Music</span>
+<span>Nuclear Blast</span>
+<span>Metal Blade Records</span>
+<span>Season of Mist</span>
+<span>Netflix</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="listen" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+LISTEN
+</h2>
+
+<iframe
+style="border-radius:12px"
+src="https://open.spotify.com/embed/playlist/1NZpHZ10M4mMoQXSvcQR1K?utm_source=generator&si=238a3ab0642344b3"
+width="100%"
+height="500"
+frameborder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<section id="discography" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+SELECTED DISCOGRAPHY
+</h2>
+
+<div class="discography-grid">
+
+<img src="assets/images/00 Netflix - 1899 .jpg" alt="">
+<img src="assets/images/01 Rotting Christ – Heretics.jpg" alt="">
+<img src="assets/images/02 Lucifer's Child - The Illuminant.jpg" alt="">
+<img src="assets/images/03 Rotting Christ – Rituals.jpg" alt="">
+<img src="assets/images/04 Rotting Christ – Kata Ton Daimona Eaytoy.jpg" alt="">
+<img src="assets/images/05 Rotting Christ – The Heretics.jpg" alt="">
+<img src="assets/images/06 Septicflesh - The Mass Of Death.jpg" alt="">
+<img src="assets/images/07 Orphaned Land album cover 1.jpg" alt="">
+<img src="assets/images/08 Thy Catafalque – Sublunary Tragedies.jpg" alt="">
+<img src="assets/images/09 Lake Of Tears - Forever Autumn.jpg" alt="">
+<img src="assets/images/10 Lacrimas Profundere - A Burning Wish.jpg" alt="">
+<img src="assets/images/11 Corvus Corax – Era Metallum.jpg" alt="">
+<img src="assets/images/12 Ben Frost - Scope Neglect.jpg" alt="">
+<img src="assets/images/13 Faith And The Muse - Elyria.jpg" alt="">
+<img src="assets/images/14 Jarbow Sacrificial - Cake.jpg" alt="">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
+
+<div class="container contact-section">
+
+<h2 class="section-title">
+CONTACT
+</h2>
+
+<p>
+pentagrammusicstudio@gmail.com
+</p>
+
+<div class="social-links">
+
+<a href="https://www.instagram.com/pentagram_music_studio/" target="_blank">
+Instagram
+</a>
+
+<a href="https://www.facebook.com/pentagrammusicstudio/" target="_blank">
+Facebook
+</a>
+
+</div>
+
+<a href="mailto:pentagrammusicstudio@gmail.com" class="cta-button">
+BOOK YOUR PROJECT
+</a>
+
+</div>
+
+</section>
+
 <footer>
 
+<p>
 © Pentagram Music Studio • George Emmanuel
+</p>
 
 </footer>
 
 </body>
-
 </html>
 ```
