@@ -161,8 +161,19 @@ filter:brightness(1.15);
 /* SECTIONS */
 
 .section{
+position:relative;
 padding:120px 30px;
-border-top:1px solid rgba(255,255,255,.06);
+}
+
+.section::before{
+content:"";
+position:absolute;
+top:0;
+left:50%;
+transform:translateX(-50%);
+width:140px;
+height:1px;
+background:rgba(139,30,36,.45);
 }
 
 .section:nth-of-type(even){
@@ -179,8 +190,10 @@ font-family:'Cinzel',serif;
 font-size:2.6rem;
 letter-spacing:3px;
 margin-bottom:60px;
+padding-top:20px;
 text-align:center;
 }
+
 
 /* ABOUT */
 
