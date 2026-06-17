@@ -362,9 +362,24 @@ gap:15px;
 }
 
 .nav-links{
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
+display:none;
+}
+
+.hero-content h1{
+font-size:3.2rem;
+line-height:1.1;
+}
+
+.hero-content h2{
+font-size:1.4rem;
+}
+
+.hero-content p{
+font-size:1rem;
+}
+
+.section::before{
+width:70px;
 }
 
 .artists-grid,
@@ -382,4 +397,3 @@ padding:90px 20px;
 }
 
 }
-```
